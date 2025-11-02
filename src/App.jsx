@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { Link } from 'react-router-dom'
 
 
 function App() {
@@ -15,13 +16,13 @@ function App() {
           <nav className="hidden md:flex space-x-6">
             <a href="#home" className="text-gray-600 hover:text-sky-500">Home</a>
             <a href="#about" className="text-gray-600 hover:text-sky-500">About</a>
-            <a href="/emailform" className="text-gray-600 hover:text-sky-500">Contact</a>
+            <Link to="/emailform" className="text-gray-600 hover:text-sky-500">Contact</Link>
           </nav>
 
           <nav className="flex md:hidden space-x-3 text-sm">
             <a href="#home" className="text-gray-600 hover:text-sky-500">Home</a>
             <a href="#about" className="text-gray-600 hover:text-sky-500">About</a>
-            <a href="/emailform" className="text-gray-600 hover:text-sky-500">Contact</a>
+            <Link to="/emailform" className="text-gray-600 hover:text-sky-500">Contact</Link>
           </nav>
         </div>
       </header>
